@@ -1,1 +1,1 @@
-# prac-backend-app
+# prac-fullstack-app
