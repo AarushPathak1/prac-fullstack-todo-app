@@ -1,7 +1,7 @@
 ### GET /
-GET http://localhost:5003/
+GET http://localhost:5003
 
-### Register a user to the /AUTH/REGISTER/ route
+### Register a user POST /AUTH/REGISTER
 POST http://localhost:5003/auth/register
 Content-Type: application/json
 
@@ -10,11 +10,33 @@ Content-Type: application/json
     "password": "123123123"
 }
 
-### Log a user in to the /AUTH/LOGIN/ route
+### Login a user POST /AUTH/LOGIN
 POST http://localhost:5003/auth/login
 Content-Type: application/json
 
 {
     "username": "gilgamesh@gmail.com",
     "password": "123123123"
+}
+
+### Fetch all todos GET /TODOS (protected)
+GET http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA2NjAxLCJleHAiOjE3NDg2OTMwMDF9.r508jN79NCtcW1FCQEMVQ8tcLWdBHOfkES5ATHt9iik
+
+### Create a todo POST /TODOS (protected)
+POST http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA2NjAxLCJleHAiOjE3NDg2OTMwMDF9.r508jN79NCtcW1FCQEMVQ8tcLWdBHOfkES5ATHt9iik
+Content-Type: application/json
+
+{
+    "task": "Learn how to use Postman"
+}
+
+### Update a todo PUT /TODOS/:id (protected)
+PUT http://localhost:5003/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA2NjAxLCJleHAiOjE3NDg2OTMwMDF9.r508jN79NCtcW1FCQEMVQ8tcLWdBHOfkES5ATHt9iik
+Content-Type: application/json
+
+{
+    "completed": 1
 }
