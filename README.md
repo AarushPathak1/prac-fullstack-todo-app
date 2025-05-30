@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📝 PRAC-FULLSTACK-APP: Simple To-Do Application
 
 A full-stack **To-Do List Application** built with:
@@ -87,3 +88,6 @@ DELETE /todos/:id — Delete a to-do
 JWT tokens are not stored in HttpOnly cookies but only local storage
 
 Routes are protected using authMiddleware.js
+=======
+# prac-fullstack-app
+>>>>>>> db2ddd986287c07eeb411c7a73f7056470c30c2f
