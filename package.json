@@ -13,7 +13,7 @@
     "jsonwebtoken": "^9.0.2"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aarush Pathak",
   "license": "ISC",
   "description": "full stack to-do application that uses a NodeJs backend, a SQLite database and JWT authentication"
 }
