@@ -21,11 +21,11 @@ Content-Type: application/json
 
 ### Fetch all todos GET /TODOS (protected)
 GET http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA2NjAxLCJleHAiOjE3NDg2OTMwMDF9.r508jN79NCtcW1FCQEMVQ8tcLWdBHOfkES5ATHt9iik
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA3OTQxLCJleHAiOjE3NDg2OTQzNDF9.2rD3Z-jmvvHMA0-xG4YDiNGPhfhe7Q70e_gQNH_4KhA
 
 ### Create a todo POST /TODOS (protected)
 POST http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA2NjAxLCJleHAiOjE3NDg2OTMwMDF9.r508jN79NCtcW1FCQEMVQ8tcLWdBHOfkES5ATHt9iik
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA3OTQxLCJleHAiOjE3NDg2OTQzNDF9.2rD3Z-jmvvHMA0-xG4YDiNGPhfhe7Q70e_gQNH_4KhA
 Content-Type: application/json
 
 {
@@ -34,9 +34,13 @@ Content-Type: application/json
 
 ### Update a todo PUT /TODOS/:id (protected)
 PUT http://localhost:5003/todos/2
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA2NjAxLCJleHAiOjE3NDg2OTMwMDF9.r508jN79NCtcW1FCQEMVQ8tcLWdBHOfkES5ATHt9iik
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA3OTQxLCJleHAiOjE3NDg2OTQzNDF9.2rD3Z-jmvvHMA0-xG4YDiNGPhfhe7Q70e_gQNH_4KhA
 Content-Type: application/json
 
 {
     "completed": 1
 }
+
+### Delete a todo DELETE /TODOS/:id (protected)
+DELETE http://localhost:5003/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4NjA2NjAxLCJleHAiOjE3NDg2OTMwMDF9.r508jN79NCtcW1FCQEMVQ8tcLWdBHOfkES5ATHt9iik
